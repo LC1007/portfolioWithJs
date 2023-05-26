@@ -141,6 +141,7 @@ img {
   color: white;
   position: relative;
   z-index: -1;
+  border: 2px solid black;
 }
 
 .card-title,
