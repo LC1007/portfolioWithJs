@@ -15,6 +15,7 @@
   --lightFont: 300;
   --mediumFont: 500;
   --boldFont: 900;
+  --minHeight: 70vh;
 }
 
 body {
@@ -43,20 +44,13 @@ img {
   max-width: 100%;
 }
 
-.header-margin {
-  margin-block: 1rem;
-}
-
-.header-mb {
-  margin-bottom: 1rem;
-}
-
 .text-center {
   text-align: center;
   font-weight: var(--mediumFont);
   font-size: 3rem;
   text-transform: uppercase;
   font-size: clamp(.5rem, 6vw, 1.1rem);
+  margin-block: 2rem;
 }
 
 /* Header Section */
@@ -133,7 +127,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100dvh;
+  min-height: var(--minHeight);
 }
 
 .edu-section {
@@ -145,7 +139,6 @@ img {
 .card {
   background-color: var(--secondaryColor);
   color: white;
-  margin-bottom: 1rem;
   position: relative;
   z-index: -1;
 }
@@ -190,7 +183,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100dvh;
+  min-height: var(--minHeight);
 }
 
 .project-section {
@@ -212,7 +205,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100dvh;
+  min-height: var(--minHeight);
 }
 
 .skills-img {
@@ -233,13 +226,22 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100dvh;
+  min-height: var(--minHeight);
 }
 
 .testimonials-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+}
+
+.pop-up{
+  position: absolute;
+  top: 100rem;
+}
+
+.show{
+  display: block;
 }
 
 /* Media Queries */

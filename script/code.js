@@ -210,3 +210,14 @@ btn.addEventListener("click", openNav());
 function openNav() {
   nav.classList.toggle("hide");
 }
+
+
+// Pop Up
+
+let openBtn = document.querySelector('#btn')
+let popUp = document.querySelector('.pop-up')
+btn.addEventListener('click', openMenu())
+
+function openMenu(){
+  popUp.classList.toggle('hide')
+}
