@@ -53,7 +53,7 @@ let projectSection = [
     cardImg: "https://i.postimg.cc/SQ345ZwC/project1.png",
     cardTitle: "Project 1",
     cardText: "We created this website to showcase our CSS animation skills",
-    gitLink: "https://github.com/LC1007/website-exercise",
+    gitLink: "https://github.com/LC1007/website-exercise.git",
     liveLink: "https://class-exercise007.netlify.app/",
   },
   {
@@ -62,24 +62,24 @@ let projectSection = [
     cardTitle: "Project 2",
     cardText:
       "This was our first try at using bootstrap to create a portfolio website.",
-    gitLink: "https://github.com/LC1007/website-exercise",
-    liveLink: "https://class-exercise007.netlify.app/",
+    gitLink: "https://github.com/LC1007/EXERCISE-PORTFOLIO.git",
+    liveLink: "https://voluble-pothos-23ef70.netlify.app/",
   },
   {
     id: 3,
     cardImg: "https://i.postimg.cc/cLTBLb6r/tempsnip.png",
     cardTitle: "Project 3",
     cardText: "I recreated a website design from pinterest.",
-    gitLink: "https://github.com/LC1007/website-exercise",
-    liveLink: "https://class-exercise007.netlify.app/",
+    gitLink: "https://github.com/Justin0929m/travel-website.git",
+    liveLink: "https://1travelwebsite1.netlify.app/",
   },
   {
     id: 4,
     cardImg: "https://i.postimg.cc/02MtHfqM/Capture.png",
     cardTitle: "Project 4",
     cardText: "This is one of my portfolio projects that I've created",
-    gitLink: "https://github.com/LC1007/website-exercise",
-    liveLink: "https://class-exercise007.netlify.app/",
+    gitLink: "https://github.com/Justin0929m/final-portfolio.git",
+    liveLink: "https://myportfoliobro.netlify.app/",
   },
 ];
 
@@ -92,10 +92,10 @@ projectSection.forEach((details) => {
         <div class="card-body">
             <div class="card-title">${details.cardTitle}</div>
             <div class="card-text">${details.cardText}</div>
-            <div class="icons">
-              <a href="${details.gitLink}"><i class="bi bi-github"></i></a>
-              <a href="${details.liveLink}"><i class="bi bi-box-arrow-up-right"></i></a>
-            </div>
+            <p class="icons">
+              <a href="${details.gitLink}" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="${details.liveLink}" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+            </p>
     </div>
 </div>
     `;
@@ -209,15 +209,4 @@ btn.addEventListener("click", openNav());
 
 function openNav() {
   nav.classList.toggle("hide");
-}
-
-
-// Pop Up
-
-let openBtn = document.querySelector('#btn')
-let popUp = document.querySelector('.pop-up')
-btn.addEventListener('click', openMenu())
-
-function openMenu(){
-  popUp.classList.toggle('hide')
 }

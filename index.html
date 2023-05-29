@@ -8,31 +8,31 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav class="navbar">
         <div class="logo">
             <h2>Dev.</h2>
             <i class="bi bi-list" id="menu" onclick="openNav()"></i>
         </div>
         <ul class="nav-links">
-          <a href="#"><li class="nav-link">home</li></a>
-          <a href="#"><li class="nav-link">about me</li></a>
-          <a href="#"><li class="nav-link">education & experience</li></a>
-          <a href="#"><li class="nav-link">projects</li></a>
-          <a href="#"><li class="nav-link">testimonials</li></a>
-          <a href="#"><li class="nav-link">contact me</li></a>
+          <a href="#home"><li class="nav-link">home</li></a>
+          <a href="#about-me"><li class="nav-link">about me</li></a>
+          <a href="#education"><li class="nav-link">education & experience</li></a>
+          <a href="#projects"><li class="nav-link">projects</li></a>
+          <a href="#skills"><li class="nav-link">skills</li></a>
+          <a href="#testimonials"><li class="nav-link">testimonials</li></a>
+          <a href="#contact-me"><li class="nav-link">contact me</li></a>
         </ul>
       </nav>
-      <div class="intro">
+      <div class="header-title">
         <h1>Justin Scholtz</h1>
-        <p>Aspiring Front End Developer</p>
+        <p class="header-text">Aspiring Front End Developer</p>
       </div>
     </header>
-
+<a href="#" target="_blank"></a>
     <!-- About Me Section -->
 <div class="container">
-
-  <section>
+  <section id="about-me">
     <div class="about-section">
       <img
         src="https://i.postimg.cc/kGN2090d/C12-Justin-Scholtz-3-min.jpg"
@@ -57,14 +57,13 @@
           developer, Life Choices prepared me well for the next stage of my
           life so I'm ready for anything and everything.
         </p>
-        <button id="btn" onclick="openMenu()">Read More</button>
       </div>
     </div>
   </section>
 
   <!-- Eduction & Experience Section-->
 
-  <section>
+  <section id="education">
     <h2 class="text-center">Education & Experience</h2>
     <div class="edu">
         <div class="edu-section"></div>
@@ -73,7 +72,7 @@
 
   <!-- Project Section -->
 
-  <section>
+  <section id="projects">
       <h2 class="text-center">Projects</h2>
       <div class="project">
           <div class="project-section"></div>
@@ -82,7 +81,7 @@
 
   <!-- Skills Section -->
 
-  <section>
+  <section id="skills">
       <h2 class="text-center">Skills</h2>
       <div class="skills">
           <div class="skills-section"></div>           
@@ -91,22 +90,52 @@
 
   <!-- Testimonials Section -->
 
-  <section>
-      <h2 class="text-center">Testimonials</h2>
+  <section id="testimonials">
+      <h2 class="text-center-title">Testimonials</h2>
       <div class="testimonials">
           <div class="testimonials-section"></div>
       </div>
   </section>
+
+  <!-- Contact Me Section -->
+
+  <section class="contact-me" id="contact-me">
+    <h2 class="text-center-title">Contact Me</h2>
+      <form action="https://formspree.io/f/xdovbwvy" method="POST" id="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="input-name" required>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="input-email" required>
+        <label for="message">Message:</label>
+        <textarea name="message" id="input-message" cols="30" rows="10" required></textarea>
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+  </section>
 </div>
 
-<div class="pop-up container" style="background-color: aqua;">
-  <h2 class="text-center">Justin Scholtz</h2>
-  <ul>
-    <li>Test</li>
-    <li>Test</li>
-    <li>Test</li>
-  </ul>
-</div>
+  <!-- Footer section -->
+
+  <section class="footer">
+    <p><i class="bi bi-c-circle" style="color: black;"></i> 2023 Justin Scholtz</p>
+
+    <div class="right-side">
+      <nav>
+      <ul class="footer-nav">
+        <a href="#" class="footer-links"><li>Home</li></a>
+        <a href="#" class="footer-links"><li>Projects</li></a>
+        <a href="#" class="footer-links"><li>About Me</li></a>
+      </ul>
+    </nav>
+    <div class="icons-section">
+      <a href="https://www.facebook.com/justin.scholtz.79" target="_blank"><i class="bi bi-facebook footer-icons" style="color: black;"></i></a>
+      <a href="https://www.linkedin.com/in/justin-scholtz-08403713a" target="_blank"><i class="bi bi-linkedin footer-icons" style="color: black;"></i></a>
+      <a href="https://www.instagram.com/justin_scholtz_/" target="_blank"><i class="bi bi-instagram footer-icons" style="color: black;"></i></a>  
+    </div>
+    </div>
+
+  </section>
+
+
 
     <script src="./script/code.js"></script>
   </body>
